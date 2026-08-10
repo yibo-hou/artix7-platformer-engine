@@ -33,6 +33,14 @@ Nominal internal clocks are 100 MHz for the MIG AXI UI, 74.25 MHz for pixels,
 and 371.25 MHz for 10:1 DDR TMDS serialization. The standalone color-bar build
 uses a Vivado-derived 74.21875 MHz pixel clock, a -0.042% timing approximation.
 
+### Board photo
+
+The design is developed and tested on the ALIENTEK DaVinci Pro CF7A100B board.
+
+<p align="center">
+  <img src="assets/board.JPG" alt="ALIENTEK DaVinci Pro CF7A100B FPGA board" width="480">
+</p>
+
 ## Architecture
 
 ```text
@@ -68,6 +76,37 @@ buffer selection.
 
 For the complete dataflow, clock domains, and start-up sequence, see
 [Architecture](docs/architecture.md).
+
+## Gameplay screens and maps
+
+At boot, the MicroBlaze application draws a three-card level selector into a
+DDR framebuffer while the SD card and game assets are verified. Use A/D to
+choose a level and Space to start it.
+
+<p align="center">
+  <img src="assets/level_selection.png" alt="Three-level selection screen" width="640">
+</p>
+
+The repository includes three generated 128x64-tile maps. Each preview shows a
+2048x1024-pixel world rendered from the same tile and collision data used by the
+FPGA game:
+
+<table border="0" cellpadding="12" cellspacing="14">
+  <tr>
+    <td align="center" style="border: 2px solid #888; padding: 8px; vertical-align: top;">
+      <strong>Copper Hills</strong><br><br>
+      <img src="assets/maps/level_01_preview.png" alt="Copper Hills map preview" width="260">
+    </td>
+    <td align="center" style="border: 2px solid #888; padding: 8px; vertical-align: top;">
+      <strong>Sky Bridges</strong><br><br>
+      <img src="assets/maps/level_02_preview.png" alt="Sky Bridges map preview" width="260">
+    </td>
+    <td align="center" style="border: 2px solid #888; padding: 8px; vertical-align: top;">
+      <strong>Starfall Run</strong><br><br>
+      <img src="assets/maps/level_03_preview.png" alt="Starfall Run map preview" width="260">
+    </td>
+  </tr>
+</table>
 
 ## Main modules
 
