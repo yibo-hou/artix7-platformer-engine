@@ -1,0 +1,95 @@
+{
+  "format_version": 1,
+  "palette": {
+    "binary": "palette_rgb565.bin",
+    "entries": 16,
+    "encoding": "little-endian RGB565",
+    "index_zero": "sprite transparent / tile sky"
+  },
+  "tiles": {
+    "png": "tiles_16x16.png",
+    "binary": "tiles_16x16.bin",
+    "cell_size": [
+      16,
+      16
+    ],
+    "cell_count": 64,
+    "bytes_per_pixel": 1,
+    "frame_bytes": 256,
+    "special_tiles": {
+      "pipe_top_left": 56,
+      "pipe_top_right": 57,
+      "pipe_body_left": 58,
+      "pipe_body_right": 59,
+      "coin": 60,
+      "health": 61,
+      "star": 62
+    }
+  },
+  "hero": {
+    "png": "hero_32x32.png",
+    "binary": "hero_32x32.bin",
+    "cell_size": [
+      32,
+      32
+    ],
+    "cell_count": 16,
+    "bytes_per_pixel": 1,
+    "frame_bytes": 1024,
+    "frames": [
+      "idle",
+      "blink",
+      "walk_0",
+      "walk_1",
+      "walk_2",
+      "walk_3",
+      "run_0",
+      "run_1",
+      "run_2",
+      "jump_rise",
+      "jump_fall",
+      "skid",
+      "crouch",
+      "hurt",
+      "victory",
+      "hatch"
+    ]
+  },
+  "enemies": {
+    "png": "enemies_32x32.png",
+    "binary": "enemies_32x32.bin",
+    "cell_size": [
+      32,
+      32
+    ],
+    "cell_count": 16,
+    "bytes_per_pixel": 1,
+    "frame_bytes": 1024,
+    "groups": {
+      "mushroom_walker": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "green_shell": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "night_bat": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "armored_turtle": [
+        12,
+        13,
+        14,
+        15
+      ]
+    }
+  }
+}

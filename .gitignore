@@ -1,0 +1,27 @@
+# Vivado transient output
+.Xil/
+*.jou
+*.log
+*.pb
+*.str
+*.wdb
+xsim.dir/
+
+# Vivado generated project products. Keep the .xpr and sources_1 tree.
+vivado/Super_Mario.cache/
+vivado/Super_Mario.gen/
+vivado/Super_Mario.hw/
+vivado/Super_Mario.ip_user_files/
+vivado/Super_Mario.runs/
+vivado/Super_Mario.sim/
+vivado/Super_Mario.srcs/utils_1/
+
+# Reproducible build/Vitis output
+build/
+
+# Local Python/editor state
+.venv/
+.vscode/
+__pycache__/
+*.py[cod]
+.DS_Store
