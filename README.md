@@ -83,6 +83,8 @@ At boot, the MicroBlaze application draws a three-card level selector into a
 DDR framebuffer while the SD card and game assets are verified. Use A/D to
 choose a level and Space to start it.
 
+Gameplay demonstration: [watch the FPGA Super Mario video on YouTube](https://youtu.be/wigF1Zxwkow).
+
 <p align="center">
   <img src="assets/level_selection.png" alt="Three-level selection screen" width="640">
 </p>
