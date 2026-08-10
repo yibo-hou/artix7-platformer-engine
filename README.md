@@ -12,10 +12,6 @@ The design uses a DDR3 frame-buffer architecture: the sprite engine renders
 RGB565 frames into DDR3 through AXI VDMA S2MM, while VDMA MM2S reads a completed
 frame through an asynchronous FIFO to the HDMI transmitter.
 
-> This is an educational, non-commercial hardware project. “Super Mario” is a
-> Nintendo trademark. Review the rights to any included artwork before
-> publishing a public copy.
-
 ## Hardware platform
 
 | Item | Configuration |
@@ -33,7 +29,7 @@ Nominal internal clocks are 100 MHz for the MIG AXI UI, 74.25 MHz for pixels,
 and 371.25 MHz for 10:1 DDR TMDS serialization. The standalone color-bar build
 uses a Vivado-derived 74.21875 MHz pixel clock, a -0.042% timing approximation.
 
-### Board photo
+### Hardware Board
 
 The design is developed and tested on the ALIENTEK DaVinci Pro CF7A100B board.
 
