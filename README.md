@@ -39,30 +39,9 @@ The design is developed and tested on the ALIENTEK DaVinci Pro CF7A100B board.
 
 ## Architecture
 
-```text
-PC keyboard / UART
-        |
-        v
-MicroBlaze game controller
-        |
-        v
-Sprite engine
-        |
-        v
-AXI4-Stream video pipeline
-        |
-        v
-VDMA S2MM -> DDR3 triple frame buffer -> VDMA MM2S
-                                            |
-                                            v
-                                   asynchronous pixel FIFO
-                                            |
-                                            v
-                                      TMDS encoder
-                                            |
-                                            v
-                                        HDMI output
-```
+<p align="center">
+  <img src="assets/Game%20Pipeline.png" alt="Frame-based game pipeline from keyboard and SD-card inputs through MicroBlaze, sprite rendering, DDR3, and HDMI output" width="100%">
+</p>
 
 The SD card supplies maps, collision data, tiles, sprites, and the RGB565
 palette. Assets are staged in DDR3 and uploaded to renderer-local memories.
